@@ -27,12 +27,13 @@ function Header() {
       justifyContent="space-around"
       position="fixed"
       top="0"
+      minH={50}
       zIndex={1}
       bg={bg}
       color={color}
     >
       <Menu>
-        <MenuButton  w={100} borderRadius={20} onClick={() => navigate("/")}>
+        <MenuButton   borderRadius={20} onClick={() => navigate("/")}>
           <Text fontWeight="bold" fontSize={22}>
             Y.O.S
           </Text>
@@ -41,7 +42,7 @@ function Header() {
           <Text fontSize={17}>Особистий кабінет</Text>
         </MenuButton>
         <MenuButton>
-          <Flex p={3} borderRadius="full" alignItems="center" justify="center">
+          <Flex  borderRadius="full" alignItems="center" justify="center">
             <PhoneIcon m={2}></PhoneIcon>
             <Text fontSize={17}>068 053 41 81</Text>
           </Flex>

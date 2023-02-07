@@ -4,6 +4,7 @@ import { Outlet, useNavigate } from "react-router-dom";
 import CardLayout from "./Cards/CardLayout";
 import Header from "./Header";
 import LeftMenu from "./LeftMenu";
+import Page from "./Pages/Page";
 import { getLoader, setLoader } from "./Slice/LoaderSlice";
 import SpinnerLoader from "./Spinner/SpinnerLoader";
 import SubHeader from "./SubHeader";
@@ -23,11 +24,11 @@ export default function StartPage() {
       {loader ? (
         <SpinnerLoader />
       ) : (
-        <>
+        <Page>
           <Header />
           <SubHeader />
           <CardLayout />
-        </>
+        </Page>
       )}
     </>
   );
