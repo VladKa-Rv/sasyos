@@ -23,7 +23,7 @@ export default function CardLayout(props) {
       <SimpleGrid  minChildWidth='250px' w="100%" spacing='40px'>
         {products.map((pos) => (
           <Card admin={props.admin} key={pos.id} data={pos} color="black" />
-        ))}
+        ))} ? <Card></Card>
       </SimpleGrid>
     </Flex>
   );
